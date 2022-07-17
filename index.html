@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        description="App that could take a screenshot of a website from an input field and put that screenshot in a web browser mockup.">
+    <title>Devsuite Screenshot-App</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="badge.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <a class="github-fork-ribbon right-top" href="https://twitter.com/Dev_suite" rel="noopener" data-ribbon="Follow Up On Twitter" title="Follow Up On Twitter">Follow Up On Twitter</a>
+        <section id="section1">
+            <h1>Taking screenshots from website urls in seconds.</h1>
+            <div class="cont">
+                <input type="text" id="websiteAdress" value='google.com'>
+                <div class="color_cont">
+                    <div id="color_demo"></div>
+                    <input type="text" id="bgColor" value='7108B6'>
+                </div>
+                <button type="submit" id="submitBtn" onclick='generateMockup();changeView()'>Take Screenshot</button>
+            </div>
+        </section>
+        <div id="section2">
+            <div class="wrapper">
+                <div class="loadingio-spinner-ripple-4o61jz917vh">
+                    <div class="ldio-tnoicgfz6f">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="section3">
+            <div class="cont">
+                <h1>Here it is! Download your Mockup!</h1>
+                <img alt="" id='resultImg'>
+                <button id="Download">Download</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
